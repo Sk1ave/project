@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    font-family: Kadwa, sans-serif;
+    background-color: #F7F7EC;
+    color: #000000;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FAFAE9;
+    padding: 10px 30px;
+    border-bottom: 1px solid #F2F5D8;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 24px;
+    
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    gap: 10px;
+  }
+  
+  .nav input[type="text"] {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .auth-links {
+    display: flex;
+    padding: 4px 10px; 
+    justify-content: center;
+    align-items: center;
+    gap: 5px; 
+    border-radius: 10px;
+    background: #F2F5D8;
+  }
+  
+  .auth-links a {
+    color: #000;
+    font-family: Kadwa, sans-serif;
+    font-size: 16px; 
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2; 
+    text-decoration: none;
+  }
+
+  .full-text {
+    display: inline;
+  }
+  
+  .short-text {
+    display: none;
+  }
+  
+  @media (max-width: 545px) {
+    .header{
+        padding: 10px 5px;
+    }
+    .full-text {
+      display: none;
+    }
+    .short-text {
+      display: inline;
+    }
+  }
+  
+  .container{
+    max-width: 800px;
+    background-color: rgb(243, 237, 237);
+    padding: 20px;
+    margin: auto;
+    margin-top: 43px;
+    box-shadow: 0px 0px 10px rgba(5, 5, 5, 0.1);
+    border-radius: 20px;
+    margin-bottom: 35px;
+  }
+  @media (max-width: 842px) {
+  .container{
+    margin: 2ch;
+  }
+  }
+
+  .p {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1.00px;
+    margin-bottom: 20px;
+    font-family: "Kadwa-Bold", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 26px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: 26px;
+  }
+
+  .book-info{
+    display: flex;
+    gap: 20px;
+}
+
+.text {
+    max-width: 800px; 
+    text-align: justify;
+}
+.text h2{
+    margin-bottom: 20px;
+}
+.text a {   /* Завдання 9*/
+    text-decoration:underline;
+    color:rgb(0, 0, 0)
+
+}
+
+.text1 {
+  max-width: 800px; 
+  text-align: justify;  
+  margin-top: 0px;
+  margin-left: 25px;
+}
+.text1 h2{
+  margin-bottom: 0px;
+  margin-top: 50px;
+}
+.text1 a {   
+  text-decoration:underline;
+  color:rgb(0, 0, 0)
+}
+.text1 p{
+  margin: 0px;
+}
+
+::placeholder{   
+    color: rgb(51, 66, 51);
+    font-weight: bold;
+    font-size: larger;
+}
+button {
+  background-color: rgb(63, 63, 245);
+  border: none;
+  border-radius: 10px; 
+  color: white;
+  padding: 8px; 
+  cursor: pointer;
+  width: 175.243px;
+  height: 37.726px;
+}
+button:hover{   
+  background-color: rgb(22, 146, 255);
+}
+ 
+
+.auth-links2 {
+  display: flex;
+  padding: 4px 10px; 
+  justify-content: center;
+  align-items: center;
+  gap: 5px; 
+  border-radius: 10px;
+  background: #E9E4E4; 
+  justify-content: left;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.auth-links2 a {
+  color: #000;
+  font-family: Kadwa, sans-serif;
+  font-size: 16px; 
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2; 
+  text-decoration: none;
+}
+.auth-button2 {
+  display: flex;
+  padding: 4px 10px; 
+  justify-content: left;
+  align-items: center;
+  gap: 5px; 
+  border-radius: 20px;
+  background: #E9E4E4; 
+  margin-left: -2px;
+  margin-right: -2px;
+
+
+  color: #000;
+  font-family: Kadwa, sans-serif;
+  font-size: 16px; 
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2; 
+  text-decoration: none;
+
+  border: none;
+  cursor: pointer;
+}
+
+.auth-button2:hover {
+  background: #dcd6d6; 
+}
+
+.review-section {
+  margin-top: 14px;
+}
+
+.review {
+  background-color: #f0eaea;
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Kadwa, sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.review-date {
+  font-weight: normal;
+  font-size: 14px;
+  color: #666;
+}
+
+.review-text {
+
+  font-size: 15px;
+  line-height: 1.5;
+  color: #000;
+  text-align: justify;
+}
+
+.picture img {
+  border-radius: 8px;
+  width: 291.421px;
+  height: 453.927px;
+}
+
+@media (max-width: 768px) {
+  .book-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0px;
+  }
+  .text1 h2{
+    margin-top: 10px;
+  }
+  .text1 {
+    margin-left: 0;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .text1 button {
+    margin-top: 10px;
+  }
+
+  .picture img {
+    width: 235px;
+    height: 366px;
+    margin: 0 auto;
+  }
+}
+

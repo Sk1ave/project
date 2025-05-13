@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вхід - BOOKSLIB</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Kadwa&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kadwa&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-color: #f7f7ec;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 20px 0;
+      text-align: center;
+      font-size: 40px;
+      font-family: Kadwa, sans-serif;
+      padding-top: 0px;
+      font-weight: bold;
+      background-color: #f7f7ec;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-card {
+      background-color: #f3eded;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .login-card h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 32px;
+      color: #2e363e;
+      font-weight: 700;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #7e868e;
+      font-size: 14px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f2f6fa;
+      font-size: 16px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 5px;
+      background-color: #3f3ff5;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+      padding-top: 15PX;
+      padding-bottom: 15PX;
+    }
+
+    .btn:hover {
+      background-color: #3030d0;
+    }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+      font-size: 12px;
+    }
+
+    .links a {
+      font-size: 13px;
+      margin-top: 10px;
+      color: #7e868e;
+      text-decoration: none;
+    }
+
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .checkbox-group input[type="checkbox"] {
+      width: 15px;
+      height: 15px;
+      margin-right: 5px;
+      cursor: pointer;
+      accent-color: #3f3ff5;
+    }
+
+    .checkbox-group label {
+      color: #7e868e;
+      font-size: 14px;
+    }
+
+    @media (max-width: 500px) {
+      header {
+        font-size: 36px;
+      }
+      .login-card {
+        padding: 20px;
+      }
+    }
+  </style>
+  
+</head>
+<body>
+
+  <header>
+    <a href="/index.html" style="text-decoration: none; color: black;">BOOKSLIB</a>
+  </header>
+
+  <main>
+    <div class="login-card">
+      <h2>Регістрація</h2>
+      <form action="#">
+        <div class="input-group">
+          <label for="login">Логін (нікнейм)</label>
+          <input type="text" id="login" name="login" required>
+        </div>
+        <div class="input-group">
+          <label for="name">Ім'я</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Пароль</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="input-group">
+          <label for="password-repeat">Іще раз</label>
+          <input type="password" id="password-repeat" name="password-repeat" required>
+        </div>
+        <div class="input-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <button type="submit" class="btn">Регістрація</button>
+        <div class="checkbox-group">
+            <input type="checkbox" name="checkbox" id="agree">
+            <label for="agree">Погоджуюся з умовами передачі даних</label>
+          </div>
+        
+        <div class="links">
+          <a href="/newLab 3/Log/test.html">Я маю акаунт</a>
+        </div>
+      </form>
+    </div>
+  </main>
+
+</body>
+</html>
